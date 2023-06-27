@@ -1,0 +1,14 @@
+{% extends 'catalogue/base_catalogue.html' %}
+
+{% block title %}
+    {{product.title}}
+{% endblock %}
+
+{% block data %}
+    <h2>name: {{ product.title }}</h2>
+    <p>category: {{ product.category }}</p>
+    <p>price: {{ product.price }}</p>
+    <p>is active: {{ product.is_active }}</p>
+    <p>description : {{ product.description }}</p>
+    <p>upc: {{ product.upc }}</p>
+{% endblock %}
