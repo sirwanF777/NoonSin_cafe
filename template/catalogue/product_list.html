@@ -7,7 +7,7 @@
 {% block data %}
     {% for product in products %}
         <a href="{%url 'product-detail' product.upc%}"> {{ product.title }}</a>
-        <br><h3>{{ product.price }} تومان</h3>
+        <h3>{{ product.price }}$</h3>
         <h2>________________________________________________________________</h2>
     {% endfor %}
 {% endblock %}

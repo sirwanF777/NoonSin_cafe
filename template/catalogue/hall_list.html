@@ -1,0 +1,7 @@
+{% extends 'catalogue/base_catalogue.html' %}
+
+{% block data %}
+    {% for hall in halls %}
+        <a href="{%url 'hall-detail' hall.pk%}"> {{hall.name}}</a><br>
+    {% endfor %}
+{% endblock %}

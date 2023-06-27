@@ -1,0 +1,11 @@
+{% extends 'catalogue/base_catalogue.html' %}
+
+{% block title %}
+    {{hall.name}} {{hall.hall_number}}
+{% endblock %}
+
+{% block data %}
+    <h2>name: {{ hall.name|title }}</h2>
+    <p>number: {{ hall.hall_number }}</p>
+    <h4>description : {{ hall.description }}</h4>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'catalogue/base_catalogue.html' %}
+
+{% block title %}
+    table List
+{% endblock %}
+
+{% block data %}
+    {% for table in tables %}
+        <a href="{%url 'table-detail' table.upc%}"> number: {{ table.table_number }}</a>
+        <h4>capacity: {{ table.table_capacity }}</h4>
+        <h3>{{ table.price }}$</h3>
+        <h2>________________________________________________________________</h2>
+    {% endfor %}
+{% endblock %}
